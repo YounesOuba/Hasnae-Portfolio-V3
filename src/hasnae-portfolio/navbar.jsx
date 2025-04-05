@@ -26,7 +26,7 @@ export default function Navbar() {
     { title: "About", href: "about", scroll: true }, 
     { title: "Projects", href: "project", scroll: true },
     { title: "Resume", href: "resume", scroll: true },
-    { title: "Contact", href: "contact" },
+    { title: "Contact", href: "contact", scroll: true },
   ];
 
   return (

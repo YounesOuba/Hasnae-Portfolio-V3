@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "@react-spring/web": "^9.7.5",
     "aos": "^2.3.4",
     "boxicons": "^2.1.4",
