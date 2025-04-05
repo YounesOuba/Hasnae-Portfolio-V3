@@ -6,6 +6,7 @@ const About = () => {
   const skills = [
     "Robotics",
     "Electronics",
+    "Machine Learning",
     "Python",
     "MATLAB",
     "Java",
