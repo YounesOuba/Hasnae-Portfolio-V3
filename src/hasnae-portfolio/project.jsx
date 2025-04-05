@@ -11,21 +11,22 @@ import { motion } from "framer-motion";
 
     //⚠️⚠️⚠️⚠️⚠️⚠️ read here :
     // f kolla projet 3ndeQ (objet) hadchi llii lteht... fach tbedlii title ghaykhsseQ tbedlii m3aah category bach fach nklikiiw ela 
-    // category dyalna yb9a ytlee3 fiiha daak lprojet okay ...
+    // category dyalna yb9a ytlee3 fiiha daak lprojet ...
 
 const projects = [
-  { id: 1, title: "AI Robot", category: "Robotics", tech: ["Python", "TensorFlow"] },
-  { id: 2, title: "E-Commerce Website", category: "Web Development", tech: ["React", "Node.js"] },
-  { id: 3, title: "Smart Home Automation", category: "Electronics", tech: ["IoT", "Raspberry Pi"] },
-  { id: 4, title: "Portfolio Website", category: "Web Development", tech: ["Next.js", "Tailwind"] },
-  { id: 5, title: "Autonomous Car System", category: "AI & ML", tech: ["Python", "OpenCV"] },
+  { id: 1, title: "Conception I", category: "Grabcad", tech: ["SolidWorks"], link: "https://grabcad.com/library/elfin10-cobot-6dof-1"},
+  { id: 2, title: "Conception II", category: "Grabcad", tech: ["SolidWorks"], link: "https://grabcad.com/library/plastic-shredder-machine-7"},
+
+
+  { id: 3, title: "Automatique", category: "Github", tech: ["MATLAB"], link: "https://github.com/hasnaeait/supreme-octo-spoon.git"},
+  { id: 4, title: "Python", category: "Github", tech: ["Python"], link: "https://github.com/hasnaeait/Python-code.git"},
 ];
 
     // ⚠️⚠️⚠️ and here :
     // ndozo l category ghatbedlii ela hsab dakchii lli 3ndeQ ntiiya , o kolla wehda kayna hna khass tkoon f weha mn hadou lfoo9 
     // bach fach nkliikiiw eliiha tlle3 liina lprojects lli 3ndhom diik category x.
 
-const categories = ["All", "Robotics", "Web Development", "Electronics", "AI & ML"];
+const categories = ["All", "Github", "Grabcad"];
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -78,6 +79,16 @@ const Projects = () => {
                 </span>
               ))}
             </div>
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-10 block text-white bg-gradient-to-r from-pink-500 to-purple-500 p-3 rounded-lg font-semibold shadow-lg hover:from-purple-500 hover:to-pink-500 hover:shadow-xl transition-all duration-300 ease-in-out self-end"
+              >
+                View Project
+              </a>
+            )}
           </motion.div>
         ))}
       </div>
