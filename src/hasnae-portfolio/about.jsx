@@ -8,7 +8,6 @@ const About = () => {
     "Electronics",
     "Python",
     "MATLAB",
-    "SolidWorks",
     "Java",
     "Computer-Aided Manufacturing (CAM)",
     "Computer-Aided Design (CAD)",
