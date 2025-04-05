@@ -5,14 +5,14 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaCube, FaPhone } from "react-icons/f
 const About = () => {
   const skills = [
     "Robotics",
-    "Electronics Engineering",
+    "Electronics",
     "Python",
-    "AI & Machine Learning",
-    "JavaScript",
-    "React",
-    "Node.js",
-    "PHP & SQL",
-    "PostgreSQL",
+    "MATLAB",
+    "SolidWorks",
+    "Java",
+    "Computer-Aided Manufacturing (CAM)",
+    "Computer-Aided Design (CAD)",
+    "Electrical Circuit Design (PCB Manufacturing)",
   ];
 
   return (
