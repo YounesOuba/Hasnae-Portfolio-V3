@@ -5,6 +5,7 @@
   "dependencies": {
     "@formspree/react": "^3.0.0",
     "@react-spring/web": "^9.7.5",
+    "@vercel/analytics": "^1.5.0",
     "aos": "^2.3.4",
     "boxicons": "^2.1.4",
     "cra-template": "1.2.0",

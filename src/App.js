@@ -26,7 +26,6 @@
 
 
 import Navbar from "./hasnae-portfolio/navbar";
-// import VideoBackground from "./hasnae-portfolio/VideoBg";
 import Home from "./hasnae-portfolio/home";
 import About from "./hasnae-portfolio/about";
 import Projects from "./hasnae-portfolio/project";
@@ -34,6 +33,7 @@ import Resume from "./hasnae-portfolio/resume";
 import Contact from "./hasnae-portfolio/conatct";
 import Footer from "./hasnae-portfolio/footer";
 
+import { Analytics } from "@vercel/analytics/react";
 
 export default function HasnaePortfolio() {
   return(
@@ -57,6 +57,9 @@ export default function HasnaePortfolio() {
         <Contact />
       </section>
       <Footer />
+
+      <Analytics />
     </>
   )
 }
+
