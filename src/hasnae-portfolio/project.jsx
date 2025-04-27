@@ -16,10 +16,12 @@ import { motion } from "framer-motion";
 const projects = [
   { id: 1, title: "Conception I", category: "Grabcad", tech: ["SolidWorks"], link: "https://grabcad.com/library/elfin10-cobot-6dof-1"},
   { id: 2, title: "Conception II", category: "Grabcad", tech: ["SolidWorks"], link: "https://grabcad.com/library/plastic-shredder-machine-7"},
+  { id: 3, title: "Conception III", category: "Grabcad", tech: ["SolidWorks"], link: "https://grabcad.com/library/line-follower-robot-26"},
+  { id: 4, title: "Conception IIII", category: "Grabcad", tech: ["SolidWorks"], link: "https://grabcad.com/library/electric-car-jack-"},
 
 
-  { id: 3, title: "Automatique", category: "Github", tech: ["MATLAB"], link: "https://github.com/hasnaeait/supreme-octo-spoon.git"},
-  { id: 4, title: "Python", category: "Github", tech: ["Python"], link: "https://github.com/hasnaeait/Python-code.git"},
+  { id: 5, title: "Automatique", category: "Github", tech: ["MATLAB"], link: "https://github.com/hasnaeait/supreme-octo-spoon.git"},
+  { id: 6, title: "Python", category: "Github", tech: ["Python"], link: "https://github.com/hasnaeait/Python-code.git"},
 ];
 
     // ⚠️⚠️⚠️ and here :
