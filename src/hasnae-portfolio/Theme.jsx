@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Sun, Moon } from "lucide-react"; //icons
+import { Sun, Moon } from "lucide-react";
 
 export default function Theme() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
