@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { Menu, X } from "lucide-react"; // Menu and close icons
+import { Menu, X } from "lucide-react";
 
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
