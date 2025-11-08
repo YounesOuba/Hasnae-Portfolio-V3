@@ -26,22 +26,13 @@ export default function Home() {
       id="home"
       className="
         relative w-full h-screen flex flex-col justify-center items-center text-center px-6 
-        bg-gradient-to-b from-gray-100 via-white to-gray-200 
-        dark:from-gray-900 dark:via-gray-800 dark:to-black 
+        bg-gray-200  dark:bg-zinc-900
         transition-all duration-500 overflow-hidden
       "
     >
       {/* Background Glow (subtle & theme-adaptive) */}
       <motion.div
         className="absolute inset-0 z-0 opacity-20"
-        animate={{
-          background: [
-            "radial-gradient(circle at 30% 20%, rgba(255,192,203,0.3), transparent 60%)",
-            "radial-gradient(circle at 70% 80%, rgba(0,191,255,0.3), transparent 60%)",
-            "radial-gradient(circle at 50% 50%, rgba(255,182,193,0.3), transparent 60%)",
-          ],
-        }}
-        transition={{ repeat: Infinity, duration: 6, ease: "easeInOut" }}
       />
 
       {/* Title (Typing effect) */}
