@@ -1,236 +1,291 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
-import cv from "./assets/HasnaeAitLhaj.pdf";
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown, FaGlobe, FaWhatsapp } from "react-icons/fa";
+import cv from "./assets/Ait_Lhaj_Hasnae-PFE_2026.pdf";
 
 const Resume = () => {
   const technicalSkills = [
-    "Computer-Aided Design (CAD)",
-    "Computer-Aided Manufacturing (CAM)",
-    "Manufacturing and Mechanical Construction (RDM)",
-    "Robotics Programming and Automotive Skills",
+    "CAD / CAM / RDM / FEM",
+    "Robotics & Automotive Systems",
+    "Programming: Python, Java, C",
   ];
 
   const personalSkills = [
-    "Scientific curiosity",
-    "Ability to work under pressure",
+    "Teamwork",
+    "Problem-solving",
+    "Adaptability under pressure",
+    "Curiosity & Scientific thinking",
   ];
 
   const software = [
-    "Catia V5", "Ansys", "Matlab", "LabVIEW", "FeatureCAM", "Microsoft Office"
-  ];
-
-  const languages = [
-    "French: B2", "English: B1", "Arabic"
+    "Catia V5", "SolidWorks", "Ansys", "Matlab/Simulink", "LabVIEW", "FeatureCAM", "Microsoft Office"
   ];
 
   const certifications = [
-    "Jupyter | 365 Data Science",
-    "Computer Vision | Alison",
-    "Fusion 360 Circuit Design and PCB Manufacturing | Udemy"
+    "Machine Learning with Python | IBM",
+    "Fusion 360 Circuit Design and PCB Manufacturing | Udemy",
+  ];
+
+  const languages = [
+    "French: Fluent", "English: Intermediate", "Arabic: Native",
   ];
 
   const education = [
     {
-      year: "2023-present",
+      year: "2023 – Present",
       degree: "State Engineer Diploma in Mechatronics and Production",
-      institution: "Faculty of Sciences and Techniques of Beni Mellal (FSTBM)"
+      institution: "Faculty of Sciences and Techniques of Beni Mellal (FSTBM)",
     },
     {
-      year: "2021-2023",
-      degree: "University Diploma in Science and Technology in Mathematics, Computer Science, and Physics",
-      institution: "Faculty of Sciences and Techniques of Errachidia (FSTE)"
+      year: "2021 – 2023",
+      degree: "University Diploma in Science and Technology (Maths, CS, Physics)",
+      institution: "Faculty of Sciences and Techniques of Errachidia (FSTE)",
     },
     {
-      year: "2020-2021",
+      year: "2020 – 2021",
       degree: "Baccalaureate in Mathematics Science A",
-      institution: "Hassan II High School, Midelt"
-    }
+      institution: "Hassan II High School, Midelt",
+    },
   ];
 
   const experience = [
     {
+      role: "End-of-Study Internship (PFE)",
+      company: "3D Smart Factory, Mohammedia",
+      period: "Aug 2025 – Sep 2025",
+      description:
+        "Modeling of a 6-axis robotic arm and development of precision algorithms for motion control.",
+    },
+    {
+      role: "PFA Internship",
+      company: "Harmony Technology, Rabat",
+      period: "Jul 2025 – Aug 2025",
+      description:
+        "Designed an intelligent assistance system for elderly and disabled people and developed an associated web application.",
+    },
+    {
+      role: "PFA Internship",
+      company: "Smart Automation Technologies, Tangier",
+      period: "Jul 2025 – Aug 2025",
+      description:
+        "Developed a predictive maintenance solution for gearboxes using machine learning and vibration analysis.",
+    },
+    {
       role: "Introductory Internship",
-      company: "Univers Système Auto Company, Midelt",
-      period: "July 2024",
-      description: "First contact with the professional environment and discovering the field of automobiles. Understanding vehicle components and systems, repairing parts, and performing electronic diagnostics using CLIP software."
-    }
+      company: "Univers Système Auto, Midelt",
+      period: "Jul 2024",
+      description:
+        "Explored the automotive industry, studied vehicle systems, and performed electronic diagnostics using CLIP software.",
+    },
   ];
 
   const projects = [
-    "Design and development of a tracking robot",
-    "Development and manufacturing of an automated electric jack",
-    "Development of an intelligent waste sorting system"
+    "Line-following robot design and development",
+    "Personnel management system in Java",
+    "Intelligent waste sorting system",
+    "6-DOF robotic arm design with Matlab/Simulink & ROS",
+    "Automated electric jack design",
+    "Smart Farm project using AI & IoT for agricultural optimization",
   ];
 
   return (
-    <section id="resume" className="py-20 px-8 text-gray-900 dark:text-white max-w-5xl mx-auto">
-      <motion.h1 
-        className="text-5xl text-center font-bold mb-10 text-gray-800 dark:text-white"
-        initial={{ opacity: 0, y: -50 }}
+    <section
+      id="resume"
+      className="py-20 px-6 md:px-12 max-w-6xl mx-auto text-gray-900 dark:text-white"
+    >
+      <motion.h1
+        className="text-5xl font-bold text-center mb-16 text-pink-600 dark:text-pink-500"
+        initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.8 }}
       >
         Resume
       </motion.h1>
 
-      {/* Profile Section */}
+      {/* Profile */}
       <motion.div
-        className="flex mb-8 cursor-pointer"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0 }}
-        whileHover={{ scale: 1.05 }}
+        className="p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg mb-16"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
       >
-        <div className="flex-1 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-semibold text-pink-600 dark:text-pink-500 mb-4">Profile</h2>
-          <p>
-            Future Engineer in Mechatronics and Production Engineering at FST Beni Mellal. Currently, I am looking for a final year internship (PFA) for a duration of 2 months, starting from July 2025.
-          </p>
-        </div>
+        <h2 className="text-3xl font-semibold mb-4 text-pink-600 dark:text-pink-400">
+          Profile
+        </h2>
+        <p className="text-lg leading-relaxed">
+          Future Engineer in Mechatronics and Production Engineering at FST Beni Mellal. 
+          Currently seeking a final-year internship (PFE) lasting 4 to 6 months, starting from February 2026.
+        </p>
       </motion.div>
 
-      {/* Education Section */}
-      <motion.div
-        className="flex mb-8 cursor-pointer"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0 }}
-        whileHover={{ scale: 1.05 }}
-      >
-        <div className="flex-1 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-semibold text-pink-600 dark:text-pink-500 mb-4">Education</h2>
+      {/* Grid for Education & Experience */}
+      <div className="grid md:grid-cols-2 gap-8 mb-16">
+        {/* Education */}
+        <motion.div
+          className="p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl font-semibold mb-6 text-pink-600 dark:text-pink-400">
+            Education
+          </h2>
           {education.map((edu, index) => (
-            <div key={index} className="mb-4">
-              <h3 className="text-xl font-medium text-gray-800 dark:text-white">{edu.degree}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">{edu.year} | {edu.institution}</p>
+            <div key={index} className="mb-5">
+              <h3 className="text-xl font-medium">{edu.degree}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                {edu.year} | {edu.institution}
+              </p>
             </div>
           ))}
-        </div>
-      </motion.div>
+        </motion.div>
 
-      {/* Professional Experience Section */}
-      <motion.div
-        className="flex mb-8 cursor-pointer"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0 }}
-        whileHover={{ scale: 1.05 }}
-      >
-        <div className="flex-1 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-semibold text-pink-600 dark:text-pink-500 mb-4">Professional Experience</h2>
+        {/* Experience */}
+        <motion.div
+          className="p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          <h2 className="text-3xl font-semibold mb-6 text-pink-600 dark:text-pink-400">
+            Professional Experience
+          </h2>
           {experience.map((job, index) => (
-            <div key={index} className="mb-4">
-              <h3 className="text-xl font-medium text-gray-800 dark:text-white">{job.role} - {job.company}</h3>
-              <p className="text-sm text-gray-600 dark:text-gray-300">{job.period}</p>
-              <p>{job.description}</p>
+            <div key={index} className="mb-6">
+              <h3 className="text-xl font-medium">{job.role}</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                {job.company} | {job.period}
+              </p>
+              <p className="text-gray-700 dark:text-gray-300 mt-1">
+                {job.description}
+              </p>
             </div>
           ))}
-        </div>
+        </motion.div>
+      </div>
+
+      {/* Projects */}
+      <motion.div
+        className="p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg mb-16"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <h2 className="text-3xl font-semibold mb-6 text-pink-600 dark:text-pink-400">
+          Academic Projects
+        </h2>
+        <ul className="list-disc pl-6 space-y-2">
+          {projects.map((project, index) => (
+            <li key={index}>{project}</li>
+          ))}
+        </ul>
       </motion.div>
 
-      {/* Skills Section */}
-      <motion.div
-        className="flex mb-8 cursor-pointer"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0 }}
-        whileHover={{ scale: 1.05 }}
-      >
-        <div className="flex-1 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-semibold text-pink-600 dark:text-pink-500 mb-4">Technical Skills</h2>
-          <div className="flex flex-wrap gap-3">
+      {/* Skills & Certifications */}
+      <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <motion.div
+          className="p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl font-semibold mb-6 text-pink-600 dark:text-pink-400">
+            Technical Skills
+          </h2>
+          <ul className="list-disc pl-6 space-y-1">
             {technicalSkills.map((skill, index) => (
-              <span key={index} className="bg-gray-300 dark:bg-gray-600 text-gray-800 dark:text-white py-2 px-4 rounded-lg">{skill}</span>
+              <li key={index}>{skill}</li>
             ))}
+          </ul>
+          <h3 className="text-2xl font-semibold mt-6 mb-3 text-pink-600 dark:text-pink-400">
+            Software
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {software.map((soft, index) => (
+              <span
+                key={index}
+                className="bg-gray-300 dark:bg-gray-700 py-1 px-3 rounded-lg text-sm"
+              >
+                {soft}
+              </span>
+            ))}
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          <h2 className="text-3xl font-semibold mb-6 text-pink-600 dark:text-pink-400">
+            Certifications & Languages
+          </h2>
+          <h3 className="text-xl font-semibold mb-2">Certifications</h3>
+          <ul className="list-disc pl-6 space-y-1 mb-4">
+            {certifications.map((cert, index) => (
+              <li key={index}>{cert}</li>
+            ))}
+          </ul>
+          <h3 className="text-xl font-semibold mb-2">Languages</h3>
+          <ul className="list-disc pl-6 space-y-1">
+            {languages.map((lang, index) => (
+              <li key={index}>{lang}</li>
+            ))}
+          </ul>
+        </motion.div>
+      </div>
+
+      {/* Contact */}
+      <motion.div
+        className="flex flex-col md:flex-row justify-between items-center gap-6"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        <div className="p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg text-center md:text-left w-full md:w-1/2">
+          <h2 className="text-2xl font-semibold text-pink-600 dark:text-pink-400 mb-4">
+            Download My CV
+          </h2>
+          <button
+            onClick={() => window.open(cv, "_blank")}
+            className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-5 rounded-lg transition-all"
+          >
+            Download <FaArrowDown className="inline ml-2 animate-bounce" />
+          </button>
+        </div>
+
+        <div className="p-8 bg-gray-100 dark:bg-gray-800 rounded-2xl shadow-lg text-center md:text-left w-full md:w-1/2">
+          <h2 className="text-2xl font-semibold text-pink-600 dark:text-pink-400 mb-4">
+            Contact
+          </h2>
+          <div className="flex justify-center md:justify-start gap-6 text-2xl">
+            <a
+              href="https://www.linkedin.com/in/hasnae-ait-lhaj"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-600"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="mailto:aitlhajhasnae@gmail.com"
+              className="hover:text-pink-600"
+            >
+              <FaEnvelope />
+            </a>
+            <a
+              href="https://wa.me/212651250889"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-pink-600"
+              title="WhatsApp"
+            >
+              <FaWhatsapp className="inline w-6 h-6 -mt-2" />
+            </a>
           </div>
         </div>
       </motion.div>
-
-      {/* Certifications Section */}
-      <motion.div
-        className="flex mb-8 cursor-pointer"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0 }}
-        whileHover={{ scale: 1.05 }}
-      >
-        <div className="flex-1 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-semibold text-pink-600 dark:text-pink-500 mb-4">Certifications</h2>
-          <ul className="list-disc pl-5">
-            {certifications.map((cert, index) => (
-              <li key={index} className="text-gray-600 dark:text-gray-300">{cert}</li>
-            ))}
-          </ul>
-        </div>
-      </motion.div>
-
-      {/* Projects Section */}
-      <motion.div
-        className="flex mb-8 cursor-pointer"
-        initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0 }}
-        whileHover={{ scale: 1.05 }}
-      >
-        <div className="flex-1 p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg">
-          <h2 className="text-3xl font-semibold text-pink-600 dark:text-pink-500 mb-4">Academic Projects</h2>
-          <ul className="list-disc pl-5">
-            {projects.map((project, index) => (
-              <li key={index} className="text-gray-600 dark:text-gray-300">{project}</li>
-            ))}
-          </ul>
-        </div>
-      </motion.div>
-
-     {/* Contact & CV Download Section */}
-<motion.div
-  className="flex flex-col md:flex-row justify-between items-center md:items-start gap-6 mb-8"
-  initial={{ opacity: 0, y: 100 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 1 }}
->
-  <motion.div 
-    className="w-full md:w-auto p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg cursor-pointer text-center md:text-left"
-    initial={{ opacity: 0, x: 100 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.3 }}
-    whileHover={{ scale: 1.05 }}
-  >
-    <h2 className="text-2xl md:text-3xl font-semibold text-pink-600 dark:text-pink-500 mb-4">
-      Download My CV
-    </h2>
-    <button 
-      onClick={() => window.open(cv, "_blank")} 
-      className="bg-gray-600 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-lg"
-    >
-      Download CV <FaArrowDown className="inline-block ml-2 animate-bounce" />
-    </button>
-  </motion.div>
-
-  <motion.div 
-    className="w-full md:w-auto p-6 bg-gray-100 dark:bg-gray-700 rounded-lg shadow-lg cursor-pointer text-center md:text-left"
-    initial={{ opacity: 0, x: 100 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.3 }}
-    whileHover={{ scale: 1.05 }}
-  >
-    <h2 className="text-2xl md:text-3xl font-semibold text-pink-600 dark:text-pink-500 mb-4">
-      Contact
-    </h2>
-    <div className="flex justify-center md:justify-start gap-6">
-      <a href="https://github.com/hasnaeait" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-900 dark:text-white hover:text-pink-600 dark:hover:text-pink-600">
-        <FaGithub />
-      </a>
-      <a href="https://www.linkedin.com/in/hasnae-ait-lhaj" target="_blank" rel="noopener noreferrer" className="text-2xl text-gray-900 dark:text-white hover:text-pink-600 dark:hover:text-pink-600">
-        <FaLinkedin />
-      </a>
-      <a href="mailto:aitlhajhasnae@gmail.com" className="text-2xl text-gray-900 dark:text-white hover:text-pink-600 dark:hover:text-pink-600">
-        <FaEnvelope />
-      </a>
-    </div>
-  </motion.div>
-</motion.div>
     </section>
   );
 };

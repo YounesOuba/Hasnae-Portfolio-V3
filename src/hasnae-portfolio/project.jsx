@@ -7,13 +7,14 @@ import large1 from "./assets/projects/ShrederMachine/large1.jpg";
 import carJack from "./assets/projects/CarJack/carJack.jpg";
 import smart from "./assets/projects/smartWast/smart.jpeg";
 import auto from "./assets/projects/automatique/auto.jpg";
-import counter from "./assets/projects/Counter/counter.jpg"
+import counter from "./assets/projects/Counter/counter.jpg";
+import SmartFarm from "./assets/projects/SmartFarm/smartfarm.jpg";
 
 const projects = [
   {
     id: 1,
     title: "Elfin10-cobot | 6DOF",
-    description: "Modèle 3D du bras robotique Elfin 10 de Han’s Robot, un robot collaboratif 6 axes conçu pour l'automatisation industrielle. Ce modèle est idéal pour la simulation, l’intégration dans des projets robotiques et l’apprentissage en CAO. Disponible en formats STEP et SolidWorks. N'hésitez pas à commenter et partager vos retours !",
+  description: "3D model of the Elfin 10 collaborative 6-axis robotic arm, designed for industrial automation. Ideal for simulation, robotics integration, and CAD learning. Provided in STEP and SolidWorks formats.",
     category: "Grabcad",
     tech: ["SolidWorks"],
     images: [preview],
@@ -22,7 +23,7 @@ const projects = [
   {
     id: 2,
     title: "Plastic Shredder Machine",
-    description: "This is a complete 3D model of a plastic shredder machine designed for recycling applications. The model includes all major components such as the shredding chamber, blades, motor mount, hopper, and frame. Ideal for mechanical and industrial design projects related to waste processing or environmental engineering",
+  description: "3D model of a plastic shredder machine for recycling, including all main components. Useful for mechanical and industrial design projects focused on waste processing.",
     category: "Grabcad",
     tech: ["SolidWorks"],
     images: [large1],
@@ -31,7 +32,7 @@ const projects = [
   {
     id: 3,
     title: "Line Drawer Robot",
-    description: "This drawing robot is designed to trace predefined plans or patterns on the ground with precision. It features a compact 3D structure, a two-wheel drive system, and space for a microcontroller. Ideal for automation and mechatronics projects, it can be customized for various field marking or floor plotting applications", 
+  description: "Compact drawing robot that traces patterns on the ground with precision. Features two-wheel drive and microcontroller space. Great for automation and field marking projects.",
     category: "Grabcad",
     tech: ["SolidWorks"],
     images: [large],
@@ -40,7 +41,7 @@ const projects = [
   {
     id: 4,
     title: "Electric Car Jack",
-    description: "This is a complete 3D model of an electric car jack designed for automatic vehicle lifting. The model includes the motor housing, scissor mechanism, base plate, screw drive, and support arms. Ideal for automotive design, mechatronics, and mechanical engineering projects.",
+  description: "3D model of an electric car jack for automatic vehicle lifting. Includes all mechanical parts. Suitable for automotive and mechatronics projects.",
     category: "Grabcad",
     tech: ["SolidWorks"],
     images: [carJack],
@@ -49,7 +50,7 @@ const projects = [
   {
     id: 5,
     title: "Automatique",
-    description: "Le projet consiste à créer une interface graphique utilisateur (GUI) sous MATLAB dédiée à la méthode de Nyquist, dans le cadre du module d’automatique. Cette application permettra de tracer et d’analyser les diagrammes de Nyquist pour des systèmes linéaires, facilitant ainsi l’étude de la stabilité et des marges de gain et de phase. Le GUI offrira une interaction intuitive pour entrer les fonctions de transfert, ajuster les paramètres, et visualiser les résultats en temps réel, ce qui rendra l’apprentissage et l’analyse plus accessibles aux étudiants et ingénieurs.",
+  description: "MATLAB GUI for Nyquist method: plots and analyzes Nyquist diagrams for linear systems, helping study stability and gain/phase margins. Interactive and educational tool for students and engineers.",
     category: "Github",
     tech: ["MATLAB"],
     images: [auto, ],
@@ -58,7 +59,7 @@ const projects = [
   {
     id: 6,
     title: "Smart Wast Sorting Bin",
-    description:"Le projet Smart Waste Sorting Bin est une poubelle intelligente conçue pour trier automatiquement les déchets à l’aide de capteurs et d’un programme développé en Python. Elle utilise une caméra  pour détecter le type de déchet (plastique, métal, papier, etc.) et le trier dans le compartiment approprié grâce à un système motorisé. L’objectif est de faciliter le tri sélectif, réduire les erreurs humaines et encourager une gestion plus écologique des déchets. Ce système peut être utilisé dans les maisons, les écoles ou les espaces publics pour améliorer le recyclage",
+  description: "Smart waste bin that uses sensors and Python to automatically sort trash (plastic, metal, paper, etc.) into the correct compartment. Designed to improve recycling and reduce human error.",
     category: "Github",
     tech: ["Python"],
     images: [smart, ],
@@ -67,11 +68,20 @@ const projects = [
   {
     id: 7,
     title: "Counter 0000-to-9999 asembler language",
-    description: "Le projet porte sur la réalisation d’un compteur numérique de 0000 à 0999 utilisant un microcontrôleur PIC16F877A associé à un afficheur 7 segments à 4 digits. Ce système permet d’afficher en temps réel un compteur incrémental, géré par le microcontrôleur, avec un multiplexage efficace des digits pour une lecture claire et précise. Ce projet illustre la maîtrise des concepts d’interfaçage matériel, de gestion des temporisations et de programmation embarquée en langage assembleur ou C, dans le cadre des systèmes électroniques et automatiques",
+  description: "Digital counter (0000–9999) using a PIC16F877A microcontroller and 4-digit 7-segment display. Demonstrates hardware interfacing, timing, and embedded programming in assembly/C.",
     category: "Github",
     tech: ["Assembly Language"],
     images: [counter, ],
-    link: "https://github.com/hasnaeait/Counter-0000-to-9999-aasembler-language",
+    link: "https://github.com/hasnaeait/Counter-0000-to-9999-aasembler-language"
+  },
+  {
+    id: 8,
+    title: "Smart Farm Monitoring System",
+  description: "Development of a Smart Farm using AI and IoT for digitalizing and optimizing agricultural practices.",
+    category: "",
+    tech: ["Python", "IoT", "AI"],
+    images: [SmartFarm],
+    link: "#"
   }
 ];
 
@@ -197,14 +207,20 @@ const ProjectCard = ({ project }) => {
         ))}
       </div>
 
-      <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-auto inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:from-purple-500 hover:to-pink-500 hover:shadow-xl transition-all duration-300"
-      >
-        View Project
-      </a>
+      {project.link && project.link !== "#" ? (
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold py-2 px-6 rounded-full shadow-lg hover:from-purple-500 hover:to-pink-500 hover:shadow-xl transition-all duration-300"
+        >
+          View Project
+        </a>
+      ) : (
+        <span className="mt-auto inline-block bg-gray-300 dark:bg-zinc-700 text-gray-600 dark:text-gray-300 font-bold py-2 px-6 rounded-full shadow cursor-not-allowed opacity-70 select-none">
+          No link available for now
+        </span>
+      )}
     </motion.div>
   );
 };
