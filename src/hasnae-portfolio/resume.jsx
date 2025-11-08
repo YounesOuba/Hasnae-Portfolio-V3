@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown, FaGlobe, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaArrowDown, FaWhatsapp } from "react-icons/fa";
 import cv from "./assets/Ait_Lhaj_Hasnae-PFE_2026.pdf";
 
 const Resume = () => {
@@ -8,13 +8,6 @@ const Resume = () => {
     "CAD / CAM / RDM / FEM",
     "Robotics & Automotive Systems",
     "Programming: Python, Java, C",
-  ];
-
-  const personalSkills = [
-    "Teamwork",
-    "Problem-solving",
-    "Adaptability under pressure",
-    "Curiosity & Scientific thinking",
   ];
 
   const software = [

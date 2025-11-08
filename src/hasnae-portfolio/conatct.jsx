@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaEnvelope, FaLinkedin, FaPhone } from "react-icons/fa";
 
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("xyzenrjk");
