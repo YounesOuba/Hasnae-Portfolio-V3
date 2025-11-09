@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Condiment&family=Goldman:wght@400;700&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Condiment&family=Goldman:wght@400;700&family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 
 /* Global background styles */
@@ -23,6 +23,7 @@ body {
 
   body{
     font-family: "Orbitron", serif;
+    
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
