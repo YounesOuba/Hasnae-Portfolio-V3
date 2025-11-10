@@ -43,7 +43,7 @@ const Resume = () => {
 
   const experience = [
     {
-      role: "End-of-Study Internship (PFA)",
+      role: "Final Year Project (PFA)",
       company: "3D Smart Factory, Mohammedia",
       period: "Aug 2025 – Sep 2025",
       description:
